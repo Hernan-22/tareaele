@@ -1,0 +1,66 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:369210944582:task-definition/hernan-despliegue:1",
+    "containerDefinitions": [
+        {
+            "name": "hernan-despliegue",
+            "image": "369210944582.dkr.ecr.us-east-2.amazonaws.com/hernan-despliegue",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "hernan-despliegue-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": []
+        }
+    ],
+    "family": "hernan-despliegue",
+    "taskRoleArn": "arn:aws:iam::369210944582:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::369210944582:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "512",
+    "memory": "1024",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2023-07-13T10:47:13.197Z",
+    "registeredBy": "arn:aws:iam::369210944582:root",
+    "tags": []
+}
