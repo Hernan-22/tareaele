@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-2:369210944582:task-definition/hernan-app:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:369210944582:task-definition/ba16034-despliegue:1",
     "containerDefinitions": [
         {
-            "name": "hernan-app",
-            "image": "369210944582.dkr.ecr.us-east-2.amazonaws.com/hernan-repositorio",
+            "name": "ba16034-despliegue",
+            "image": "369210944582.dkr.ecr.us-east-2.amazonaws.com/ba16034-repo",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "hernan-app-80-tcp",
+                    "name": "ba16034-despliegue-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -22,7 +22,7 @@
             "ulimits": []
         }
     ],
-    "family": "hernan-app",
+    "family": "ba16034-despliegue",
     "taskRoleArn": "arn:aws:iam::369210944582:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::369210944582:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
@@ -60,7 +60,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-13T12:49:36.342Z",
+    "registeredAt": "2023-07-13T13:51:59.427Z",
     "registeredBy": "arn:aws:iam::369210944582:root",
     "tags": []
 }
