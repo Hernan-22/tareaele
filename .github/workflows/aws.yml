@@ -32,12 +32,12 @@ on:
 
 env:
   AWS_REGION: us-east-2                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: hernan-repositorio           # set this to your Amazon ECR repository name
-  ECS_SERVICE: hernan-app-service                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: hernan-app                 # set this to your Amazon ECS cluster name
+  ECR_REPOSITORY: ba16034-repo            # set this to your Amazon ECR repository name
+  ECS_SERVICE: ba16034-despliegue-service                 # set this to your Amazon ECS service name
+  ECS_CLUSTER: ba16034-cluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: task_definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: hernan-app           # set this to the name of the container in the
+  CONTAINER_NAME: ba16034-despliegue           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 permissions:
